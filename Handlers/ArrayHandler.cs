@@ -63,7 +63,7 @@ namespace JsonSerialization.Handlers
                     // Assuming that the element value is already a literal value.
                     object value = element;
 
-                    // Checking every loop if the element is a Dictionary, List, or literal value.
+                    // Checking every loop if the element is a (Object as Dictionary), (Array as List), or literal value.
                     Type currentElementType = element.GetType();
 
                     if (currentElementType == typeof(Dictionary<string, object>))
